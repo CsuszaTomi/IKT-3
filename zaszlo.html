@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>
+            Kollázs
+        </title>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header id="fejlec">
+            <h1 id="szlogen">
+                Zászló
+            </h1> 
+        </header>
+        <section id="tartalom">
+            <nav id="menusav">
+                <a href="index.html">Főoldal</a>
+                <a href="kollazs.html">Kollázs</a>
+                <a href="zaszlo.html">Zászló</a>
+                <a href="recept.html">Recept</a>
+                <a href="orarend.html">Órarend</a>
+            </nav>
+            <article id="lenyeg">
+                <header>
+                    <h2>Papp Dániel Dominik</h2>
+                    <h3>Zászló</h3>
+                </header>
+                <p>
+                    <canvas id="myCanvas" width="300" height="160"></canvas>
+
+                    <script>
+                        const myCanvas = document.getElementById("myCanvas");
+                        const ctx = myCanvas.getContext("2d");
+                        ctx.fillStyle = "red";
+                        ctx.fillRect(20, 20, 250, 40);
+                        ctx.fillStyle = "GhostWhite";
+                        ctx.fillRect(20, 60, 250, 40);
+                        ctx.fillStyle = "LimeGreen";
+                        ctx.fillRect(20, 100, 250, 40);
+                    </script>
+                </p>
+                <p>
+                </p>
+            </article>
+        </section>
+        <footer>
+            <p>
+               Készítette: Papp Dániel Dominik
+            </p>
+        </footer>
+    </body>
+</html>
